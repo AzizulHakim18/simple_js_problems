@@ -60,3 +60,36 @@ function lengthConverter(length, fromUnit, toUnit) {
 
 // Example usage
 console.log(lengthConverter(5, "m", "mi")); // Converts 1 meter to centimeters
+
+// 4.Calculate the sum of numbers within an array
+
+function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] === 'number') { // Check if the element is a number
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+
+// Example usage
+const numbers = [1, 2, 3, 4, 5];
+console.log(sumArray(numbers)); // Output: 15
+
+
+// 5.Create a function that reverses an array
+
+function reverseArray(arr) {
+    const reversedArray = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversedArray.push(arr[i]);
+    }
+    return reversedArray;
+}
+
+// Example usage
+const originalArray = [1, 2, 3, 4, 5];
+const reversed = reverseArray(originalArray);
+console.log(reversed); // Output: [5, 4, 3, 2, 1]
+
